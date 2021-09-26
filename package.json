@@ -1,0 +1,26 @@
+{
+  "name": "btns",
+  "version": "1.0.0",
+  "description": "A collection of cool button effects",
+  "main": "index.html",
+  "scripts": {
+    "start": "parcel index.html --open",
+    "build": "parcel build index.html"
+  },
+  "dependencies": {
+    "font-awesome": "4.7.0",
+    "jquery": "3.6.0",
+    "parcel-bundler": "^1.6.1"
+  },
+  "devDependencies": {
+    "@babel/core": "7.2.0"
+  },
+  "resolutions": {
+    "@babel/preset-env": "7.13.8"
+  },
+  "keywords": [
+    "javascript",
+    "buttons",
+    "hover"
+  ]
+}
