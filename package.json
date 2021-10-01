@@ -1,11 +1,14 @@
 {
+  "homepage": "http://enjeck.github.io/btns",
   "name": "btns",
   "version": "1.0.0",
   "description": "A collection of cool button effects",
   "main": "index.html",
   "scripts": {
     "start": "parcel index.html --open",
-    "build": "parcel build index.html"
+    "build": "parcel build index.html",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "font-awesome": "4.7.0",
@@ -13,7 +16,8 @@
     "parcel-bundler": "^1.6.1"
   },
   "devDependencies": {
-    "@babel/core": "7.2.0"
+    "@babel/core": "7.2.0",
+    "gh-pages": "^3.2.3"
   },
   "resolutions": {
     "@babel/preset-env": "7.13.8"
