@@ -148,6 +148,7 @@ $(function () {
 });
 
 $(function () {
+  let tooltip = document.getElementById("htmlTooltip");
   $("#copy-html").on("click", function () {
     let copiedText = $(".html-code").text();
     document.getElementById("cliphold").value = copiedText;
@@ -155,13 +156,15 @@ $(function () {
     copyText.select();
     copyText.setSelectionRange(0, 99999);
     document.execCommand("copy");
-
-    let tooltip = document.getElementById("htmlTooltip");
     tooltip.innerHTML = "Copied: HTML";
   });
+  $("#copy-html").on("mouseleave", function() {
+    tooltip.innerHTML = "Copy to clipboard";
+  })
 });
 
 $(function () {
+  let tooltip = document.getElementById("cssTooltip");
   $("#copy-css").on("click", function () {
     let copiedText = $(".css-code").text();
     document.getElementById("cliphold").value = copiedText;
@@ -169,8 +172,9 @@ $(function () {
     copyText.select();
     copyText.setSelectionRange(0, 99999);
     document.execCommand("copy");
-
-    let tooltip = document.getElementById("cssTooltip");
     tooltip.innerHTML = "Copied: CSS";
   });
+  $("#copy-css").on("mouseleave", function() {
+    tooltip.innerHTML = "Copy to clipboard";
+  })
 });
