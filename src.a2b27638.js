@@ -11433,6 +11433,7 @@ $(function () {
   });
 });
 $(function () {
+  var tooltip = document.getElementById("htmlTooltip");
   $("#copy-html").on("click", function () {
     var copiedText = $(".html-code").text();
     document.getElementById("cliphold").value = copiedText;
@@ -11440,11 +11441,14 @@ $(function () {
     copyText.select();
     copyText.setSelectionRange(0, 99999);
     document.execCommand("copy");
-    var tooltip = document.getElementById("htmlTooltip");
     tooltip.innerHTML = "Copied: HTML";
+  });
+  $("#copy-html").on("mouseleave", function () {
+    tooltip.innerHTML = "Copy to clipboard";
   });
 });
 $(function () {
+  var tooltip = document.getElementById("cssTooltip");
   $("#copy-css").on("click", function () {
     var copiedText = $(".css-code").text();
     document.getElementById("cliphold").value = copiedText;
@@ -11452,8 +11456,10 @@ $(function () {
     copyText.select();
     copyText.setSelectionRange(0, 99999);
     document.execCommand("copy");
-    var tooltip = document.getElementById("cssTooltip");
     tooltip.innerHTML = "Copied: CSS";
+  });
+  $("#copy-css").on("mouseleave", function () {
+    tooltip.innerHTML = "Copy to clipboard";
   });
 });
 },{"./styles.css":"src/styles.css","jquery":"node_modules/jquery/dist/jquery.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
@@ -11484,7 +11490,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "34481" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "39633" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
