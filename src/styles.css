@@ -177,6 +177,9 @@ html, body,#buttons {
 	border-radius: 60px;
 	color: #fff !important;
 }
+.btn-rect-to-round:focus{
+	text-decoration: underline;
+}
 .btn-rect-to-round--black{
 	color: #333 !important;
 	border: 2px solid #333;
