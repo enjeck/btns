@@ -1,7 +1,7 @@
 html, body,#buttons {
 	width: 100%;
 	overflow-x: hidden;
-	color: #555;
+	color: rgb(155, 117, 117);
 }
 
 .intro{
@@ -78,19 +78,19 @@ html, body,#buttons {
 	transform: translateX(-9%) translateY(-25%) rotate(45deg);
 }
 .btn-slide-bottom--orange:after{
-	background: #FEAE00;
+	background: #27c2e9;
 }
 .btn-slide-bottom--pink:after{
 	background: #FF6392;
 }
 .btn-slide-bottom--blue:after{
-	background: #3A86FF;
+	background: #81b620;
 }
 .btn-slide-bottom--red:after{
-	background: #EF233C;
+	background: #705e7a;
 }
 .btn-slide-bottom--green:after{
-	background: #80ED99;
+	background: #aa5c38;
 }
 .btn-slide-bottom--yellow:after{
 	background:#3D348B;
@@ -119,28 +119,28 @@ html, body,#buttons {
 	transition: all .5s ease-in-out;
 }
 .btn-moving-gradient--orange{
-	background-image: linear-gradient(to right, hsl(31, 100%, 50%), hsl(45, 100%, 50%), hsl(41, 100%, 50%) , #FBB03B);
+	background-image: linear-gradient(to right, hsl(31, 26%, 29%), hsl(45, 70%, 56%), hsl(41, 74%, 13%) , #FBB03B);
 	box-shadow: 0 4px 15px 0 hsl(45, 100%, 40%);
 }
 .btn-moving-gradient--pink{
-	background-image: linear-gradient(to right,hsl(332, 100%, 69%), hsl(390, 100%, 69%), hsl(360, 100%, 69%) , #FF6392);
-	box-shadow: 0 4px 15px 0 hsl(370, 100%, 69%);
+	background-image: linear-gradient(to right,hsl(332, 100%, 50%), rgb(80, 67, 74), rgb(170, 93, 116) , #FF6392);
+	box-shadow: 0 4px 15px 0 rgb(196, 107, 89);
 }
 .btn-moving-gradient--blue{
-	background-image: linear-gradient(to right,hsl(217, 100%, 62%), hsl(280, 100%, 62%), hsl(260, 100%, 62%) , #3A86FF);
-	box-shadow: 0 4px 15px 0 hsl(280, 100%, 62%);
+	background-image: linear-gradient(to right,hsl(217, 41%, 45%), hsl(278, 45%, 47%), hsl(197, 68%, 48%) , #374d70);
+	box-shadow: 0 4px 15px 0 hsl(226, 39%, 32%);
 }
 .btn-moving-gradient--red{
-	background-image: linear-gradient(to right,hsl(353, 86%, 54%), hsl(393, 86%, 54%), hsl(380, 86%, 54%) , #EF233C);
-	box-shadow: 0 4px 15px 0 hsl(393, 86%, 54%);
+	background-image: linear-gradient(to right,hsl(182, 91%, 49%), rgb(71, 89, 109), rgb(123, 231, 204) , #383d80);
+	box-shadow: 0 4px 15px 0 rgb(54, 113, 121);
 }
 .btn-moving-gradient--green{
-	background-image: linear-gradient(to right,hsl(134, 75%, 72%), hsl(184, 75%, 72%), hsl(154, 75%, 72%) , #80ED99);
+	background-image: linear-gradient(to right,hsl(134, 37%, 41%), hsl(184, 68%, 56%), hsl(154, 75%, 72%) , #80ED99);
 	box-shadow: 0 4px 15px 0 hsl(184, 75%, 72%);
 }
 .btn-moving-gradient--purple{
-	background-image: linear-gradient(to right,hsl(246, 45%, 38%), hsl(296, 45%, 38%), hsl(276, 45%, 38%) , #3D348B);
-	box-shadow: 0 4px 15px 0 hsl(296, 45%, 38%);
+	background-image: linear-gradient(to right,hsl(61, 86%, 66%), hsl(295, 59%, 35%), hsl(276, 34%, 57%) , #6d8b34);
+	box-shadow: 0 4px 15px 0 hsl(297, 9%, 44%);
 }
 /* Rectangular to rounded */
 .btn-rect-to-round {
@@ -172,16 +172,16 @@ html, body,#buttons {
 	border: 2px solid #FF6392;
 }
 .btn-rect-to-round--pink:hover{
-	border-color:#FF6392;
-	background: #FF6392;
+	border-color:#75535d;
+	background: #cc96a6;
 }
 .btn-rect-to-round--blue{
-	color: #3A86FF !important;
+	color: #5370a0 !important;
 	border: 2px solid #3A86FF;
 }
 .btn-rect-to-round--blue:hover{
-	border-color:#3A86FF;
-	background: #3A86FF;
+	border-color:#436499;
+	background: #99bafc;
 }
 .btn-rect-to-round--red{
 	color: #EF233C!important;
@@ -196,8 +196,8 @@ html, body,#buttons {
 	border: 2px solid #80ED99;
 }
 .btn-rect-to-round--green:hover{
-	border-color:#80ED99;
-	background: #80ED99;
+	border-color:#27462e;
+	background: #aeebbc;
 }
 .btn-rect-to-round--orange{
 	color: #FEAE00 !important;
@@ -247,22 +247,22 @@ html, body,#buttons {
 	margin-left : 65px;
 }
 .btn-slide-show-inner--orange{
-	background : #FEAE00;
+	background : #0fa8ce;
 }
 .btn-slide-show-inner--pink{
-	background : #FF6392;
+	background : #c21f50;
 }
 .btn-slide-show-inner--blue{
-	background : #3A86FF;
+	background : #76d86d;
 }
 .btn-slide-show-inner--red{
 	background : #EF233C;
 }
 .btn-slide-show-inner--green{
-	background : #80ED99;
+	background : #9b6e34;
 }
 .btn-slide-show-inner--gray{
-	background : #eee;
+	background : rgb(131, 66, 161);
 }
 /* Fill center */
 .btn-fill-center {
@@ -289,16 +289,16 @@ html, body,#buttons {
 	border: 2px solid #333;
 }
 .btn-fill-center-text--gray:hover {
-	color: #fff;
-	box-shadow: #333 0 0px 0px 40px inset;
+	color: rgb(58, 45, 45);
+	box-shadow: rgb(221, 149, 149) 0 0px 0px 40px inset;
 }
 .btn-fill-center-text--orange {
 	color: #FEAE00;
 	border: 2px solid #FEAE00;
 }
 .btn-fill-center-text--orange:hover {
-	color: #fff;
-	box-shadow: #FEAE00 0 0px 0px 40px inset;
+	color: rgb(97, 94, 89);
+	box-shadow: #eeba4a 0 0px 0px 40px inset;
 }
 .btn-fill-center-text--blue {
 	color: #3A86FF;
@@ -306,7 +306,7 @@ html, body,#buttons {
 }
 .btn-fill-center-text--blue:hover {
 	color: #fff;
-	box-shadow: #3A86FF 0 0px 0px 40px inset;
+	box-shadow: #4a6185 0 0px 0px 40px inset;
 }
 .btn-fill-center-text--purple {
 	color: #3D348B;
@@ -768,10 +768,10 @@ html, body,#buttons {
 	transform: translateX(49%);
 }
 .btn-half-swipe--orange:after {
-	border-top: 80px solid #FEAE00;
+	border-top: 80px solid #b1a17e;
 }
 .btn-half-swipe--orange:hover {
-	border: 2px solid #FEAE00;
+	border: 2px solid #977e49;
 }
 .btn-half-swipe--pink:after {
 	border-top: 80px solid #FF6392;
@@ -780,16 +780,16 @@ html, body,#buttons {
 	border: 2px solid #FF6392;
 }
 .btn-half-swipe--red:after {
-	border-top: 80px solid #EF233C;
+	border-top: 80px solid #42b0db;
 }
 .btn-half-swipe--red:hover {
-	border: 2px solid #EF233C;
+	border: 2px solid #5bb9ca;
 }
 .btn-half-swipe--blue:after {
-	border-top: 80px solid #3A86FF;
+	border-top: 80px solid #abf523;
 }
 .btn-half-swipe--blue:hover {
-	border: 2px solid #3A86FF;
+	border: 2px solid #97ee26;
 }
 .btn-half-swipe--green:after {
 	border-top: 80px solid #80ED99;
@@ -1625,10 +1625,10 @@ html, body,#buttons {
 	right: 15px;
 }
 .btn-shadow--orange span, .btn-shadow--orange:before {
-	background: #FEC54B;
+	background: #8a7d60;
 }
 .btn-shadow--black span, .btn-shadow--black:before {
-	background: #333;
+	background: rgb(26, 153, 147);
 }
 .btn-shadow--red span, .btn-shadow--red:before {
 	background: #F03048;
@@ -1637,7 +1637,7 @@ html, body,#buttons {
 	background: #3A86FF;
 }
 .btn-shadow--green span, .btn-shadow--green:before {
-	background: #53BB6B;
+	background: #a7d429;
 }
 .btn-shadow--purple span, .btn-shadow--purple:before {
 	background: #3D348B;
