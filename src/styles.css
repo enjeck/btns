@@ -19,6 +19,8 @@ body,
 #buttons h2 {
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  font-weight: 400;
 }
 .btn-box {
   margin: auto;
@@ -2733,59 +2735,28 @@ body,
 .code-header h4 {
   margin: 3px 0;
 }
-.button-container {
-  display: inline-block;
-  position: relative;
-}
-.button {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #3498db;
-  color: #fff;
-  font-size: 18px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: transform 0.2s, box-shadow 0.2s;
-}
-.button:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+h2 {
+  justify-content: center;
+  display: flex;
 }
 .mirror {
   position: absolute;
-  bottom: -2px; /* Adjust this value for the mirror offset */
+  bottom: -10px; /* Adjust this value for the mirror offset */
   left: 0;
   width: 100%;
   height: 100%;
   background: linear-gradient(
     to bottom,
-    rgba(255, 255, 255, 0.3) 0%,
+    rgba(255, 255, 255, 0.1) 0%,
     rgba(255, 255, 255, 0) 100%
   );
   border-radius: 5px;
   pointer-events: none;
-  transform: scaleY(-1);
+  transform: scaleY(-4);
 }
-
-.color-animation {
-  transition: background-color 0.3s ease-in-out;
+button {
+  transition: all 0.4s;
 }
-
-.color-animation:hover {
-  animation: colorChange 2s infinite alternate;
-}
-
-@keyframes colorChange {
-  0% {
-    background-color: #3498db;
-  }
-  100% {
-    background-color: #e74c3c;
-  }
-}
-h2 {
-  justify-content: center;
-  align-self: center;
-  display: flex;
+button:hover {
+  transform: scale(1.2);
 }
