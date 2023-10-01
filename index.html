@@ -14,6 +14,11 @@
     <link href="src/styles.css" rel="stylesheet" type="text/css" />
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-W8GSQN5XSZ"
@@ -1129,7 +1134,59 @@
         </div>
       </div>
     </div>
+    <div class="buttons-section">
+      <h2>Mirror Button</h2>
+      <div class="btn-box">
+        <div class="btn-container">
+          <button
+            class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-md transition-transform transition-shadow transform hover:translate-y-[-5px] shadow-md"
+          >
+            Blue Button
+          </button>
+        </div>
+        <div class="mirror"></div>
 
+        <div class="btn-container">
+          <button
+            class="bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-4 rounded-md transition-transform transition-shadow transform hover:translate-y-[-5px] shadow-md"
+          >
+            Green Button
+          </button>
+          <div class="mirror"></div>
+        </div>
+        <div class="btn-container">
+          <button
+            class="bg-red-500 hover:bg-red-600 text-white font-semibold py-2 px-4 rounded-md transition-transform transition-shadow transform hover:translate-y-[-5px] shadow-md"
+          >
+            Red Button
+          </button>
+          <div class="mirror"></div>
+        </div>
+        <div class="btn-container">
+          <button
+            class="bg-yellow-500 hover:bg-yellow-600 text-white font-semibold py-2 px-4 rounded-md transition-transform transition-shadow transform hover:translate-y-[-5px] shadow-md"
+          >
+            Yellow Button
+          </button>
+          <div class="mirror"></div>
+        </div>
+        <div class="btn-container">
+          <button
+            class="bg-purple-500 hover:bg-purple-600 text-white font-semibold py-2 px-4 rounded-md transition-transform transition-shadow transform hover:translate-y-[-5px] shadow-md"
+          >
+            Purple Button
+          </button>
+          <div class="mirror"></div>
+        </div>
+        <div class="btn-container">
+          <button
+            class="bg-pink-500 hover:bg-pink-600 text-white font-semibold py-2 px-4 rounded-md transition-transform transition-shadow transform hover:translate-y-[-5px] shadow-md"
+          >
+            Pink Button
+          </button>
+        </div>
+      </div>
+    </div>
     <div
       style="
         width: 100%;
@@ -1140,8 +1197,6 @@
     >
       <div class="code-area">
         <div class="close-icon" aria-hidden="true">x</div>
-
-        <!--Hidden input to hold text to be copied-->
         <input
           style="position: absolute; left: -100vw; opacity: 0"
           id="cliphold"
@@ -1161,23 +1216,12 @@
               </div>
             </div>
             <pre><code class="html-code language-html">
-                        &lt;!-- html code here --&gt;
-                  </code></pre>
+            <div class="button-container">
+              <div class="button">Mirror Button</div>
+              <div class="mirror"></div>
           </div>
-        </div>
-        <div class="css-code-container code-container">
-          <div class="code-header">
-            <h4>CSS:</h4>
-            <div class="tooltip">
-              <button id="copy-css">
-                <span class="tooltiptext" id="cssTooltip"
-                  >Copy to clipboard</span
-                >
-                Copy CSS
-              </button>
-            </div>
+                </code></pre>
           </div>
-          <pre><code class="css-code language-css"> /* CSS Code here */ </code></pre>
         </div>
       </div>
     </div>
