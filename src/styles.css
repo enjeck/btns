@@ -2433,3 +2433,39 @@ right: 0;
 		margin: 3px 0;
 	}
 
+#focus1:focus{
+			box-shadow: 0 0 0 2px #ffffff, 0 0 3px 5px #333;
+			outline: 2px dotted transparent;
+			outline-offset: 2px;
+		
+}
+#focus2:focus {
+	box-shadow: 0 0 0 2px #ffffff, 0 0 3px 5px #feae00;
+	outline: 2px dotted transparent;
+	outline-offset: 2px;
+
+}
+#focus3:focus {
+	box-shadow: 0 0 0 2px #ffffff, 0 0 3px 5px #ef233c;
+	outline: 2px dotted transparent;
+	outline-offset: 2px;
+
+}
+#focus4:focus {
+	box-shadow: 0 0 0 2px #ffffff, 0 0 3px 5px #3a86ff;
+	outline: 2px dotted transparent;
+	outline-offset: 2px;
+
+}
+#focus5:focus {
+	box-shadow: 0 0 0 2px #ffffff, 0 0 3px 5px #80ed99;
+	outline: 2px dotted transparent;
+	outline-offset: 2px;
+
+}
+#focus6:focus {
+	box-shadow: 0 0 0 2px #ffffff, 0 0 3px 5px #3d348b;
+	outline: 2px dotted transparent;
+	outline-offset: 2px;
+
+}
