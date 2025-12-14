@@ -16,10 +16,11 @@
     "format": "prettier --write \"src/**/*.{js,css,html}\""
   },
   "devDependencies": {
-    "vite": "^5.0.0",
-    "gh-pages": "^6.1.0",
     "eslint": "^8.55.0",
-    "prettier": "^3.1.1"
+    "gh-pages": "^6.1.0",
+    "prettier": "^3.1.1",
+    "terser": "^5.44.1",
+    "vite": "^5.0.0"
   },
   "keywords": [
     "javascript",
