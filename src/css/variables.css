@@ -1,0 +1,66 @@
+/**
+ * CSS Variables and Design Tokens
+ * Central place for all design system values
+ */
+
+:root {
+  /* Color palette */
+  --color-primary: #333;
+  --color-secondary: #555;
+  --color-white: #fff;
+  --color-gray-light: #eee;
+  --color-gray-medium: #ccc;
+  --color-gray-dark: #333;
+  
+  --color-orange: #FEAE00;
+  --color-pink: #FF6392;
+  --color-blue: #3A86FF;
+  --color-red: #EF233C;
+  --color-green: #80ED99;
+  --color-purple: #3D348B;
+  --color-yellow: #3D348B;
+  
+  /* Spacing */
+  --spacing-xs: 5px;
+  --spacing-sm: 10px;
+  --spacing-md: 20px;
+  --spacing-lg: 40px;
+  --spacing-xl: 80px;
+  
+  /* Typography */
+  --font-family-primary: Arial, Helvetica, sans-serif;
+  --font-family-code: 'Source Code Pro', monospace;
+  
+  --font-size-sm: 14px;
+  --font-size-md: 15px;
+  --font-size-lg: 16px;
+  --font-size-xl: 5rem;
+  
+  --font-weight-normal: 400;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  
+  /* Transitions */
+  --transition-fast: 0.2s;
+  --transition-normal: 0.5s;
+  --transition-slow: 0.8s;
+  
+  /* Border radius */
+  --radius-sm: 3px;
+  --radius-md: 6px;
+  --radius-lg: 50px;
+  
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.12);
+  --shadow-md: 0 4px 15px 0;
+  --shadow-lg: 1px 1px 6px rgba(0, 0, 0, 0.4);
+  
+  /* Button dimensions */
+  --btn-height: 50px;
+  --btn-width: 200px;
+  --btn-padding: 17px 45px;
+  
+  /* Layout */
+  --max-width-container: 800px;
+  --code-area-height: 50vh;
+}

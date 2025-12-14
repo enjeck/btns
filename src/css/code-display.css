@@ -1,0 +1,234 @@
+/**
+ * Code Display Panel Styles
+ * Minimal, sharp design inspired by modern code editors
+ */
+
+/* Code area container */
+.code-area {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: var(--code-area-height);
+  background: #0a0a0a;
+  border-top: 1px solid #1a1a1a;
+  padding: 0;
+  transform: translateY(110%);
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), 
+              opacity 0.3s ease-out;
+  opacity: 0;
+  z-index: 1000;
+  overflow-y: auto;
+  font-family: ui-monospace, 'SF Mono', 'Monaco', 'Cascadia Code', 'Roboto Mono', monospace;
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.5);
+  will-change: transform, opacity;
+}
+
+.code-area.active {
+  transform: translateY(0%);
+  opacity: 1;
+}
+
+/* Close button */
+.close-icon {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  color: #666;
+  font-size: 20px;
+  font-weight: 300;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  user-select: none;
+  z-index: 10;
+  border: 1px solid #2a2a2a;
+  border-radius: 2px;
+}
+
+.close-icon:hover {
+  background: #1a1a1a;
+  color: #fff;
+  border-color: #3a3a3a;
+}
+
+/* Hidden clipboard holder */
+#cliphold {
+  position: absolute;
+  left: -100vw;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Code container */
+.code-container {
+  margin-bottom: 0;
+  border-bottom: 1px solid #1a1a1a;
+}
+
+.code-container:last-child {
+  border-bottom: none;
+}
+
+.code-container pre {
+  height: 140px;
+  width: 100%;
+  overflow: auto;
+  background: #0f0f0f !important;
+  color: #d4d4d4;
+  padding: 20px;
+  border: none;
+  margin: 0;
+  font-family: ui-monospace, 'SF Mono', 'Monaco', 'Cascadia Code', 'Roboto Mono', monospace;
+}
+
+.css-code-container pre {
+  height: 200px;
+}
+
+.code-container pre code {
+  color: #d4d4d4;
+  text-shadow: none;
+  font-family: inherit;
+  font-size: 13.5px;
+  line-height: 1.7;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  tab-size: 2;
+  letter-spacing: 0;
+}
+
+/* Custom scrollbar for code */
+.code-container pre::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+.code-container pre::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+
+.code-container pre::-webkit-scrollbar-thumb {
+  background: #2a2a2a;
+  border-radius: 0;
+}
+
+.code-container pre::-webkit-scrollbar-thumb:hover {
+  background: #3a3a3a;
+}
+
+/* Code header with copy button */
+.code-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  background: #0a0a0a;
+  border-bottom: 1px solid #1a1a1a;
+}
+
+.code-header h4 {
+  margin: 0;
+  font-size: 11px;
+  font-weight: 600;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.code-header button {
+  padding: 6px 12px;
+  background: transparent;
+  color: #888;
+  border: 1px solid #2a2a2a;
+  border-radius: 2px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 500;
+  transition: all var(--transition-fast);
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.code-header button:hover {
+  background: #1a1a1a;
+  color: #fff;
+  border-color: #3a3a3a;
+}
+
+/* Tooltip styles */
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: auto;
+  white-space: nowrap;
+  background-color: #1a1a1a;
+  color: #e5e5e5;
+  text-align: center;
+  border: 1px solid #2a2a2a;
+  padding: 6px 10px;
+  position: absolute;
+  z-index: 1000;
+  bottom: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity var(--transition-fast);
+  font-size: 12px;
+  font-weight: 400;
+  pointer-events: none;
+}
+
+.tooltip .tooltiptext::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -4px;
+  border-width: 4px;
+  border-style: solid;
+  border-color: #1a1a1a transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .code-area {
+    height: 60vh;
+  }
+  
+  .code-header {
+    padding: 10px 16px;
+  }
+  
+  .code-container pre {
+    padding: 12px 16px;
+    font-size: 12px;
+    background: #0f0f0f;
+  }
+  
+  .close-icon {
+    top: 12px;
+    right: 12px;
+    width: 24px;
+    height: 24px;
+    font-size: 18px;
+  }
+}

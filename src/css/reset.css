@@ -1,0 +1,57 @@
+/**
+ * Reset and Base Styles
+ * Foundation styles for consistent rendering
+ */
+
+/* Box sizing reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margins and padding */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Base HTML and body styles */
+html,
+body {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  color: var(--color-secondary);
+  font-family: var(--font-family-primary);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Remove default button styles */
+button {
+  font-family: inherit;
+  font-size: inherit;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Remove default anchor styles */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Improve image rendering */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Consistent list styles */
+ul,
+ol {
+  list-style: none;
+}

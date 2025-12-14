@@ -1,0 +1,99 @@
+/**
+ * Layout Styles
+ * Structure and positioning of main sections
+ */
+
+/* Page container */
+#buttons {
+  width: 100%;
+  padding: var(--spacing-md);
+}
+
+/* Introduction section */
+.intro {
+  text-align: center;
+  font-family: var(--font-family-primary);
+  color: var(--color-gray-dark);
+  margin-bottom: var(--spacing-xl);
+  padding: var(--spacing-lg) var(--spacing-md);
+}
+
+.intro h1 {
+  font-size: var(--font-size-xl);
+  margin-bottom: var(--spacing-md);
+  font-weight: var(--font-weight-bold);
+}
+
+.intro h2 {
+  font-size: 1.5rem;
+  font-weight: var(--font-weight-normal);
+  color: var(--color-secondary);
+}
+
+/* Button sections */
+.buttons-section {
+  margin-top: var(--spacing-xl);
+  margin-bottom: var(--spacing-xl);
+}
+
+.buttons-section h2 {
+  text-align: center;
+  font-family: var(--font-family-primary);
+  font-size: 1.8rem;
+  margin-bottom: var(--spacing-lg);
+  color: var(--color-gray-dark);
+}
+
+/* Button grid container */
+.btn-box {
+  margin: auto;
+  max-width: var(--max-width-container);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--spacing-md);
+}
+
+/* Individual button container */
+.btn-container {
+  height: 80px;
+  width: 230px;
+  position: relative;
+  z-index: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Base button styles */
+.btn {
+  display: block;
+  margin: auto;
+  font-family: var(--font-family-primary);
+  text-transform: uppercase;
+  position: relative;
+  cursor: pointer;
+  transition: all var(--transition-normal) ease-in-out;
+}
+
+/* Special layout for neumorphic section */
+.neumorphic-section {
+  padding: var(--spacing-lg) var(--spacing-md);
+  background: var(--color-gray-light);
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .intro h1 {
+    font-size: 3rem;
+  }
+  
+  .btn-box {
+    gap: var(--spacing-sm);
+  }
+  
+  .btn-container {
+    width: 100%;
+    max-width: 230px;
+  }
+}
