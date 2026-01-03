@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+img {
+  width: 33%;
+  height: auto;
+  float: left; 
+}
+.blur {filter: blur(4px);}
+.brightness {filter: brightness(0.30);}
+.contrast {filter: contrast(180%);}
+.grayscale {filter: grayscale(100%);}
+.huerotate {filter: hue-rotate(180deg);}
+.invert {filter: invert(100%);}
+.opacity {filter: opacity(50%);}
+.saturate {filter: saturate(7);}
+.sepia {filter: sepia(100%);}
+.shadow {filter: drop-shadow(8px 8px 10px green);}
+</style>
+</head>
+<body>
+
+<h1>The filter Property</h1>
+
+<img src="pineapple.jpg" alt="Pineapple" width="300" height="300">
+<img class="blur" src="pineapple.jpg" alt="Pineapple" width="300" height="300">
+<img class="brightness" src="pineapple.jpg" alt="Pineapple" width="300" height="300">
+<img class="contrast" src="pineapple.jpg" alt="Pineapple" width="300" height="300">
+<img class="grayscale" src="pineapple.jpg" alt="Pineapple" width="300" height="300">
+<img class="huerotate" src="pineapple.jpg" alt="Pineapple" width="300" height="300">
+<img class="invert" src="pineapple.jpg" alt="Pineapple" width="300" height="300">
+<img class="opacity" src="pineapple.jpg" alt="Pineapple" width="300" height="300">
+<img class="saturate" src="pineapple.jpg" alt="Pineapple" width="300" height="300">
+<img class="sepia" src="pineapple.jpg" alt="Pineapple" width="300" height="300">
+<img class="shadow" src="pineapple.jpg" alt="Pineapple" width="300" height="300">
+
+<p><strong>Note:</strong> The filter property is not supported in Edge 12 or Internet Explorer.</p>
+
+</body>
+</html>
